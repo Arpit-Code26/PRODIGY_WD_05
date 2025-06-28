@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IAMMAC Weather App</title>
+  <link rel="stylesheet" href="weather.css" />
+</head>
+<body onload="getCurrentLocationWeather()">
+  <h1 class="app-heading">🌤️ Weather Forecast App</h1>
+
+  <div class="app">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search for a city..."/>
+      <button onclick="getWeather()">Search</button>
+    </div>
+    
+    <div class="weather-card hidden" id="weather-card">
+      <h2 id="city-name">City Name</h2>
+      <div class="main-weather">
+        <img id="weather-icon" src="" alt="Weather Icon"/>
+        <div class="temp" id="temp">--°</div>
+      </div>
+      <p id="description">Description</p>
+      <div class="weather-details">
+        <div>Humidity: <span id="humidity">--</span>%</div>
+        <div>Wind: <span id="wind">--</span> km/h</div>
+        <div>Visibility: <span id="visibility">--</span> km</div>
+        <div>UV Index: <span id="uv">--</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
