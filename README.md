@@ -1,3 +1,3 @@
 # PRODIGY_WD_05
 
-This is a weather Weabsite
+This is a weather Checking Website
